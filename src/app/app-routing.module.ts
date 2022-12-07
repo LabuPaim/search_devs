@@ -4,9 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { RepoComponent } from './repo/repo.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: '', component: HomeComponent },
-  { path: 'repo', component: RepoComponent },
+  { path: 'repos/:username', component: RepoComponent },
 ];
 
 @NgModule({

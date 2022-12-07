@@ -8,11 +8,10 @@
     <div class="search">
       <div class="input">
         <span class="material-symbols-outlined"> search </span>
-        <input type="text" id="txtBusca" placeholder="Search" />
+        <input type="text" #txtBusca placeholder="Search" />
       </div>
-      <a routerLink="/repo">
-        <button>Search</button>
-      </a>
+
+      <button routerLink="/repos/{{ txtBusca.value }}">Search</button>
     </div>
   </div>
 </div>
