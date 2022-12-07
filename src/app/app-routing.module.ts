@@ -4,8 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { RepoComponent } from './repo/repo.component';
 
 const routes: Routes = [
-  { path: 'home-component', component: HomeComponent },
-  { path: 'repo-component', component: RepoComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
+  { path: 'repo', component: RepoComponent },
 ];
 
 @NgModule({
